@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TMDB Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="failed_connect_to_server">Gagal Terkoneksi Ke Server</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="genre_movies">Genre Movies</string>
+    <string name="reviews">Reviews</string>
+    <string name="trailer">Trailer</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/genre_movies"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            style="@style/Theme.TMDB.Text"
+            android:layout_marginBottom="8dp"/>
+
+        <FrameLayout
+            android:id="@+id/container_frame"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/container_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/deep_orange_dark"
+                app:tabIndicatorColor="@color/deep_orange_dark"
+                app:tabRippleColor="@color/white">
+            </com.google.android.material.tabs.TabLayout>
+        </FrameLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</layout>

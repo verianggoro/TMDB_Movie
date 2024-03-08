@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/author_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                style="@style/Theme.TMDB.Text"
+                tools:text="Author"/>
+            <RatingBar
+                android:id="@+id/rating_review"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:isIndicator="true"
+                android:theme="@style/RatingBar"
+                android:scaleX=".3"
+                android:scaleY=".3"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:numStars="10"/>
+            <TextView
+                android:id="@+id/content_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                style="@style/Theme.TMDB.Text"
+                tools:text="Author REVIEW CONTENT"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
